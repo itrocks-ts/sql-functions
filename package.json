@@ -1,0 +1,41 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"description": "",
+	"devDependencies": {
+		"typescript": "~5.6"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": {
+		"import": "./esm/sql-functions.js",
+		"require": "./cjs/sql-functions.js"
+	},
+	"homepage": "https://it.rocks",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"*/*.d.ts",
+		"*/*.js"
+	],
+	"keywords": [
+		"backend",
+		"it.rocks"
+	],
+	"license": "ISC",
+	"name": "@itrocks/sql-functions",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/sql-functions.git"
+	},
+	"scripts": {
+		"build": "npm run build:cjs && npm run build:esm",
+		"build:cjs": "tsc -p tsconfig.cjs.json",
+		"build:esm": "tsc -p tsconfig.esm.json"
+	},
+	"types": "./esm/sql-functions.d.ts",
+	"version": "0.0.1"
+}
