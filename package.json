@@ -3,7 +3,7 @@
 		"name": "Baptiste Pillot",
 		"email": "baptiste@pillot.fr"
 	},
-	"description": "",
+	"description": "Library of SQL functions mapping logical expressions to SQL syntax",
 	"devDependencies": {
 		"typescript": "~5.6"
 	},
@@ -23,7 +23,15 @@
 	],
 	"keywords": [
 		"backend",
-		"it.rocks"
+		"comparison",
+		"conditions",
+		"database",
+		"expressions",
+		"it.rocks",
+		"logic",
+		"operators",
+		"query",
+		"sql"
 	],
 	"license": "ISC",
 	"name": "@itrocks/sql-functions",
@@ -37,5 +45,5 @@
 		"build:esm": "tsc -p tsconfig.esm.json"
 	},
 	"types": "./esm/sql-functions.d.ts",
-	"version": "0.0.1"
+	"version": "0.0.2"
 }
