@@ -1,5 +1,5 @@
 
-export default class Function
+export class Function
 {
 	constructor(public name: string, public sql: string, public value: any) {}
 }
