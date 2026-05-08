@@ -5,21 +5,18 @@
 	},
 	"description": "Library of SQL functions mapping logical expressions to SQL syntax",
 	"devDependencies": {
-		"typescript": "~5.9"
+		"typescript": "^6.0"
 	},
 	"engines": {
-		"node": ">=18"
+		"node": ">=24"
 	},
-	"exports": {
-		"import": "./esm/sql-functions.js",
-		"require": "./cjs/sql-functions.js"
-	},
+	"exports": "./cjs/sql-functions.js",
 	"homepage": "https://it.rocks",
 	"files": [
 		"LICENSE",
 		"README.md",
-		"*/*.d.ts",
-		"*/*.js"
+		"cjs",
+		"!*.map"
 	],
 	"keywords": [
 		"backend",
@@ -46,10 +43,7 @@
 		"url": "git+https://github.com/itrocks-ts/sql-functions.git"
 	},
 	"scripts": {
-		"build": "npm run build:cjs && npm run build:esm",
-		"build:cjs": "tsc -p tsconfig.cjs.json",
-		"build:esm": "tsc -p tsconfig.esm.json"
+		"build": "tsc"
 	},
-	"types": "./esm/sql-functions.d.ts",
-	"version": "0.0.7"
+	"version": "0.1.0"
 }
